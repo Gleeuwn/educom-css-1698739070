@@ -13,17 +13,19 @@
     --standaardmargin: 50px;
     --standaardpadding: 50px;
 
+    --textrechts: right;
+    --textlinks: left;
+
 }
 .navigation{
     width: 100%;
-    background-color: rgb(50, 116, 170);
-    color: #fff;
+    color: #080707;
     padding: 40px;
 }
 
 .content{ 
     display: flex;
-    background-color: #ff0;
+    background-color: #fff;
     padding: 40px;
     justify-content: center;
     align-items: center;
@@ -31,32 +33,97 @@
     height: 50%;
 }
 .block{
-    background-color: red;
+    
     display: inline-block;
     width: 32%;
     height: 150px;
     margin: 5px;
-    border: 10px Solid transparent;
+    border: 0px Solid transparent;
     border-radius: 5%;
     transition: all 0.3s ease;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+
+.block-parijs{
+    background: url(https://www.zininfrankrijk.nl/wp-content/uploads/2019/03/Parijs-%C3%8Ele-de-France-shutterstock_710380270-660x330.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.block-rome{
+    background: url(https://tourismmedia.italia.it/is/image/mitur/20220127150143-colosseo-roma-lazio-shutterstock-756032350-1?wid=1600&hei=900&fit=constrain,1&fmt=webp);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.block-brussel{
+    background: url(https://www.visit.brussels/nl/bezoekers/_jcr_content/root/container/content_1226746056_c/multicolumn/teaser_2005755142.coreimg.jpeg/1686845355349/grand-place-4212---visit-brussels---jean-michel-byl.jpeg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .block:hover{
-    border: 5px solid transparent;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    border: 0px solid transparent;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    width: 35%;
+    height: 160px;
 }
 .footer{
-    background-color:#000;
+    background-color:#968d8d;
     color: #fff;
     padding: 40px;
 }
+
+
+.menu {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: white;
+}
+
+.menu-trigger {
+    background-color: rgb(54, 51, 51);
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    z-index: 5000 !important;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.menu-trigger:hover {
+    background-color: black;
+}
+
+.menu-trigger:hover .dropdown {
+    top: 0px;
+}
+
+.dropdown {
+    position: fixed;
+    top: -400px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: rgb(104, 104, 104);
+    transition: all 0.4s ease;
+    padding: 40px;
+    text-align: left;
+}
+
 .button-container a {
     width: 200px;
     padding: 10px;
     color: #FFF;
-    background-color: #F00;
+    background-color: rgb(54, 47, 47);
+    margin: 5px;
     
     /* ROUNDING THE CORNERS */
     border-radius: 10px;
@@ -72,39 +139,14 @@
     /* Transition effect */
     transition: all 0.5s ease;
 }
+
 
 .button-container a:hover {
-    background-color: #AF1F16;
+    background-color: #242121;
     /* Let's get rid of the underline */
     text-decoration: none;
 }
 
-.button-container2 a {
-    width: 200px;
-    padding: 10px;
-    color: #FFF;
-    background: linear-gradient(90deg, white 0%, grey 100%);
-    
-    /* ROUNDING THE CORNERS */
-    border-radius: 10px;
-    
-    /* CREATED WITH THE SHADOW GENERATOR */
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
-
-    /* Let's get rid of the underline */
-    text-decoration: none;
-    
-    /* Transition effect */
-    transition: all 0.5s ease;
-}
-
-.button-container2 a:hover {
-    background: linear-gradient(90deg, grey 0%, black 100%);
-    /* Let's get rid of the underline */
-    text-decoration: none;
-}
 
 .red-square {
                 width: 100px;
