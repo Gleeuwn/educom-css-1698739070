@@ -48,4 +48,25 @@ a       {
             width: 300px;
             height: 300px;
         }
+/* unvisited link */
+a:link {
+            color: red;
+        }     
+  
+  /* visited link */
+a:visited {
+            color: green;
+        }
+  
+  /* mouse over link */
+a:hover {
+            color: hotpink;
+            font-size: 100px;
+            padding: 300px;
+        }
+  
+  /* selected link */
+a:active {
+            color: blue;
+  }
         
