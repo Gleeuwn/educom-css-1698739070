@@ -1,3 +1,20 @@
+:root {
+    --normaal: "Arial";
+
+    --donkerbruin: #402214;
+    --lichtbruin: #aa4b1b;
+
+    --rood: #b31714;
+    --roze: #dc3439;
+
+    --wit: #FFF;
+    --zwart: #000;
+
+    --standaardmargin: 50px;
+    --standaardpadding: 50px;
+
+}
+
 .red-square {
                 width: 100px;
                 height: 100px;
