@@ -1,12 +1,10 @@
-/**
- * Basis CSS file
- *
- * @author  Educom
- * @version 1.0
- *
- */
-
-html, body {
-    margin: 0;
-    padding: 0;
-}
+.red-square {
+                width: 100px;
+                height: 100px;
+                color: #FFF;
+                padding: 20px;
+                margin: 20px;
+                font-size: 24px;
+                background-color: rgb(255, 0, 0);
+                display: inline-block;
+           } 
